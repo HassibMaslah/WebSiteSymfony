@@ -1,0 +1,173 @@
+#****************HomeHeader******************
+translate.link1: Accueil
+translate.link2: Services
+translate.link3: Activités
+translate.activity1: Test de lecteur, réglage initial, optimisation 3G / 4G et & Étude de couverture
+translate.activity2: Modèles PS LTE
+translate.activity3: Audit des réseaux 2G / 3G
+translate.activity4: Benchmark des réseaux 2G / 3G / 4G
+translate.activity5: Audit d'architecture
+translate.activity6: Etude et analyse du changement de bande de fréquence
+translate.activity7: Caisses enregistreuses fiscales
+translate.link4: Références
+translate.link5: Formation
+translate.link6: Contact
+translate.link7: Langues
+#****************HomeFooter******************
+translate.aboutComp: À PROPOS DE NOTRE COMPAGNIE
+translate.aboutCompText: Telcotec est une entreprise de plus de trois ans d'expérience dans la technique et la gestion des télécommunications
+translate.Quick: Liens rapides
+translate.Quick1: Optimisation 
+translate.Quick2: Solution d'intérieur
+translate.Quick3: Conception de réseaux
+translate.Quick4: Réseaux de benchmarking
+translate.Quick5: Audit de réseau de bout en bout
+translate.Quick6: Conseil en stratégie opérationnelle
+translate.contactUs: Contactez nous
+translate.contactUsText: Vous avez des questions, des commentaires ou voulez juste dire bonjour
+translate.twiter: Fil Twitter
+translate.copyright: Copyright 2018 Tous droits réservés
+#****************Home******************
+translate.about: À PROPOS DE NOUS
+translate.aboutApp: Notre Approche
+translate.aboutAppText: Nos ingénieurs et consultants ont géré et optimisé plusieurs réseaux fixes et mobiles avec plusieurs millions d'abonnés et mené des dizaines d'études et de projets d'infrastructure d'une valeur de plusieurs millions d'euros. Ils ont effectué de nombreuses missions d'audit, d'étude, d'optimisation, de conseil et de formation dans leurs domaines de compétences.
+translate.aboutGoal: Notre Objectif
+translate.aboutGoalText: Notre objectif est de nous rendre utiles en comprenant vos spécificités et en connaissant votre contrainte.
+translate.aboutMis: Notre Mission
+translate.aboutMisText: Notre mission est de fournir des services professionnels de haute qualité en ingénierie, conseil et formation dans les domaines de la gestion technique et des télécommunications aux opérateurs, aux régulateurs, aux fabricants d'équipements de télécommunications et aux grandes entreprises.
+translate.aboutOffer: CE QUE NOUS OFFRONS
+translate.aboutOfferText: Nous travaillons à fournir des services professionnels de haute qualité en ingénierie, conseil et formation dans les domaines de la gestion technique et des télécommunications aux opérateurs, régulateurs, fournisseurs et grandes entreprises.
+translate.aboutOfferPer: Suivi des performances et optimisation des réseaux radio
+translate.aboutOfferPerText: Optimisation des indicateurs de performance clés avec engagement dans les résultats, résolution des problèmes de non qualité.
+translate.aboutOfferIndoorText: Étude, planification et conception d'une solution d'intérieur, mise en place d'une solution d'intérieur.
+translate.aboutOfferDesign: Conception et dimensionnement de réseaux
+translate.aboutOfferDesignText: Conception et dimensionnement du réseau (radio, cœur et transport), planification et dimensionnement du réseau (réseaux FTTx).
+translate.aboutSeeBtn: Voir plus
+translate.aboutAchiv: Nos réalisations
+translate.aboutAchivText: Télécommunication, planification stratégique, sécurité et système d'information
+translate.aboutAchivProj: PROJET TERMINÉ
+translate.aboutAchivTurn: chiffre d'affaires
+translate.aboutAchivEmpl: TRAVAILLEURS EMPLOYÉS
+translate.aboutAchivCountries: Pays
+translate.aboutPart: Nos partenaires
+#****************Contact******************
+translate.contactInfo: Informations de contact
+translate.contactInfoText: L'équipe Telcotec vous recontactera sous peu. Telcotec gardera vos informations confidentielles.
+translate.contactLoc: Emplacement
+translate.contactPhone: Téléphone
+translate.contactMsg: Envoie-nous un message
+translate.contactSendMsg: Envoyer
+translate.contactPlcName: ton prénom 
+translate.contactPlcEmail: ton email
+translate.contactPlcSubject: sujet
+#****************Services******************
+translate.ServicesLink11: optimisation
+translate.ServicesLink12: Surveillance des performances et optimisation des réseaux radio
+translate.ServicesLink13: optimisation des indicateurs de performance clés avec engagement envers les résultats, résolution des problèmes de non-qualité.
+translate.ServicesLink21: Solution d'intérieur
+translate.ServicesLink23: Étude, planification et conception d'une solution d'intérieur, Implémentation d'une solution d'intérieur.
+translate.ServicesLink31: Conception de réseaux
+translate.ServicesLink32: Conception et dimensionnement de réseaux
+translate.ServicesLink33: Conception et dimensionnement du réseau (Radio, Core et Transport), Planification et dimensionnement du réseau (réseaux FTTx).
+translate.ServicesLink41: Réseaux de benchmarking
+translate.ServicesLink43: Mission de réalisation de benchmarking technique et commercial selon les standards internationaux, Assistance à la clientèle pour la mise en place d'une mission de benchmark.
+translate.ServicesLink51: Audit réseau de bout en bout
+translate.ServicesLink53: Audit et diagnostic de l'infrastructure et de l'architecture du réseau, Audit du système de mesure et de facturation du trafic, Audit du système d'information.
+translate.ServicesLink61: Conseil en stratégie opérationnelle
+translate.ServicesLink63: Fournir à nos clients des compétences de consultants expérimentés dans les secteurs des télécommunications et de l'informatique dans plusieurs modes. Aider nos clients à planifier les actions de déploiement qui permettront à l'entreprise d'atteindre l'objectif avec un plan d'action opérationnel cohérent.
+translate.ServicesLink71: Formation
+translate.ServicesLink73: Offrir des cours de développement de compétences spécialisées, Transfert de savoir-faire technique. 
+translate.ServicesLink0: Contacter 
+#****************References******************
+translate.referencesTitre1: Benchemark 2G / 3G / 4G
+translate.referencesInfo1: benchmark 2G / 3G / 4G, audit d'architecture de réseau RAN.
+translate.referencesTitre2: réseau LTE
+translate.referencesInfo2: Etude de la couverture radio d'un réseau LTE.
+translate.referencesTitre3: Projet de test de lecteur, Initial Tuning & Optimisation 3G / 4G
+translate.referencesInfo3: partenaire principal d'ERICSSON pour les services de radio en Tunisie
+translate.referencesTitre4: Audit de réseau 2G / 3G
+translate.referencesInfo4: Audit réseau 2G / 3G, RAN & Enquête CORE, QoS de référence.
+translate.referencesTitre5: PS-LTE
+translate.referencesInfo5: Projet de sécurité publique PS-LTE
+translate.referencesTitre6: Audit d'architecture
+translate.referencesInfo6: Audit d'architecture, fonctionnalités et capacité des réseaux d'accès et principaux.
+translate.referencesTitre7: Etude, analyse et assistance technique
+translate.referencesInfo7: Etude, analyse et assistance technique pour l'Office de la marine marchande et des ports (OMMP).
+translate.referencesTitre8: Assistance technique
+translate.referencesInfo8: Assistance technique pour le projet «Caisses fiscales».
+# **************** Activités ******************
+translate.activitesTT: L'activité de formation
+translate.activitesp1: Nous vous apportons notre expérience de plusieurs années en formation dans les réseaux mobiles, les réseaux IP, la gestion de projets et la gestion des opérations.
+translate.activitesp2: Nous fournirons à vos cadres supérieurs et à vos gestionnaires des présentations concises et efficaces sur les nouvelles technologies et les nouvelles approches et architectures qui façonnent les tendances dans notre domaine.
+translate.activitesp3: Pour vos ingénieurs et cadres, nous proposons des sessions de formation complètes les aidant à maîtriser leurs différentes professions. Architecture, ingénierie, planification, opérations. En gestion de projet, nous organisons des sessions de préparation complète à la certification PMP du PMI en inter et intra entreprise.
+translate.activitespgm: Programme de formation
+translate.activitespgm1: Principes fondamentaux des réseaux IP
+translate.activitespgm2: Principes fondamentaux des réseaux mobiles
+translate.activitespgm3: ingénierie de réseau mobile 2G / 3G / 4G
+translate.activitespgm4: QoS et acceptation technique des réseaux
+translate.activitespgm5: Audit réseau E2E
+translate.activitespgm6: Gestion, surveillance et mesure du spectre radio
+translate.activitespgm7: Optimisation des réseaux mobiles
+translate.activitespgm8: Paramètres et fonctionnalités du réseau 2G
+translate.activitespgm9: Paramètres et fonctionnalités du réseau 3G
+translate.activitespgm10: Paramètres et fonctionnalités du réseau 4G
+translate.activitespgm11: Signalisation et investigation avancée des problèmes 3G
+translate.activitespgm12: Signalisation et investigation avancée des problèmes 4G
+translate.activitespgm13: Ingénierie et planification de solutions d'intérieur
+translate.activitespgm14: portabilité des numéros
+translate.activitespgm15: Gestion des fraudes
+translate.activitestg: Tag
+translate.activitestg2: Intérieur
+translate.activitestg3: Benchmarking
+translate.activitestg4: Audit réseau
+translate.activitestg5: stratégie
+translate.activitestg6: Conception
+#****************Activity******************
+translate.activityQL: liens rapides
+translate.activityVP: VIEW PROJECT
+translate.activityFW1: Nos œuvres en vedette
+translate.activityFW2: Ingénierie des télécommunications - Conseil - Planification stratégique & amp; Développement des affaires
+translate.activityExcavator1: Test du lecteur
+translate.activityExcavator2: réglage initial
+translate.activityExcavator3: Optimisation 3G / 4G
+translate.activityExcavator4: Etude de couverture
+translate.activity1p1: Analyse des statistiques de l'OSS et des mesures de tests de conduite, vérification et optimisation du plan de fréquences et de la matrice de voisinage, optimisation du contrôle d'admission, contrôle de charge et algorithmes HO, vérification de la procédure de services d'appel (AMR / VP / PS) mode connecté.
+translate.activity1p2: équilibrez le trafic entre les couches, les bandes et les technologies, optimisez les paramètres de configuration de l'alimentation, vérifiez les problèmes physiques, planifiez la couverture et le dimensionnement des capacités.
+translate.activityExcavator21: Radio
+translate.activityExcavator22: Réseau principal
+translate.activityExcavator23: Transmission
+translate.activityExcavator24: Sécurité
+translate.activity2: MINISTERE DE L'INTERIEUR - Conception PS LTE
+translate.activity2p1: Etude et dimensionnement de la solution, Préparation des spécifications techniques Radio, Core Network, Transmission, Security.
+translate.activity2p2: Etude et analyse de la conformité technique des offres, assistance et contrôle, acceptation
+translate.activityExcavator31: Audit de conception
+translate.activityExcavator32: stratégie d'utilisation 2G / 3G
+translate.activityExcavator33: Audit des paramètres BSS
+translate.activityExcavator34: Audit de la matrice HO
+translate.activity3p1: Audit fonctionnel de tous les équipements composant le réseau, Design Audit et stratégie d'utilisation 2G / 3G.
+translate.activity3p2: Audit du plan de fréquences et développement d'un nouveau plan, Audit des paramètres du SRS et gestion de la capacité, Audit de la matrice HO.
+translate.activityExcavator41: Analyse des résultats de mesure
+translate.activityExcavator42: Analyse du classement des opérateurs
+translate.activityExcavator43: Voix pour 2G / 3G
+translate.activityExcavator44: Données pour 3G / 4G
+translate.activity4p1: DT Measures Cities & amp; routes principales de différents réseaux Tunisia Telecom, Ooredoo, Orange.
+translate.activity4p2: Analyse des résultats de mesure et classement des opérateurs en fonction des services ci-dessous Voice pour les réseaux 2G / 3G, données pour les réseaux 3G / 4G.
+translate.activityExcavator51: Étude de conformité
+translate.activityExcavator52: outils de simulation
+translate.activityExcavator53: Audit du plan de fréquence
+translate.activityExcavator54: Audit des paramètres BSS
+translate.activity5p1: Etude du respect des normes et standards, Mesure de l'impact des changements de fréquence à l'aide d'outils de simulation.
+translate.activity5p2: Audit du plan de fréquences et développement d'un nouveau plan, Audit des paramètres du BSS et gestion de la capacité.
+translate.activityExcavator61: Étude de conformité
+translate.activityExcavator62: normes et standards
+translate.activityExcavator63: Mesure de l'impact
+translate.activityExcavator64: outils de simulation
+translate.activity6: OMMP - Etude et analyse du changement de bande de fréquence
+translate.activity6p1: Etude du respect des normes et standards, Mesure de l'impact des changements de fréquence à l'aide d'outils de simulation.
+translate.activityExcavator71: Caisses enregistreuses d'impôts
+translate.activityExcavator72: document détaillé
+translate.activityExcavator73: Optimisation 3G / 4G
+translate.activityExcavator74: spécifications
+translate.activity7: CIMF - Caisse enregistreuse d'impôt
+translate.activity7p1: Spécification technique et fonctionnelle de la solution à mettre en place Mise en place d'un plan d'action pour la mise en œuvre, Rédaction des différents documents de spécifications techniques des caisses enregistreuses, Document détaillé des procédures d'approbation et d'accréditation des caisses enregistreuses, Spécifications pour l'acquisition de la solution centrale (équipement et logiciel).
+translate.activity7p2: Mise en place, au sein de l'administration fiscale, d'une unité d'approbation des caisses enregistreuses d'impôts (formation et supervision) Accompagnement dans la mise en œuvre du projet.

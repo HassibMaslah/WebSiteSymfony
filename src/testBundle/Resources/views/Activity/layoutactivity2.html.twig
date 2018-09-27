@@ -1,0 +1,91 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+    <!-- Building Construction Area -->
+    <section class="building_construction_area">
+        <div class="container">
+            <div class="row building_construction_row">
+                <div class="col-sm-8 constructing_laft">
+                    <img src="{{asset('bundles/test/images/blog/renovation/r-5.jpg')}}" alt="">
+                    <a href="#">{{'translate.activity2'|trans}}</a>
+                      <p>{{'translate.activity2p1'|trans}}</p>
+                    <p>{{'translate.activity2p2'|trans}}</p>
+                    <div class="col-md-6 ipsum">
+                        <ul class="excavator">
+                            <li><i class="fa fa-chevron-circle-right"></i>{{'translate.activityExcavator21'|trans}}</li>
+                            <li><i class="fa fa-chevron-circle-right"></i>{{'translate.activityExcavator22'|trans}}</li>
+                            <li><i class="fa fa-chevron-circle-right"></i>{{'translate.activityExcavator23'|trans}}</li>
+                            <li><i class="fa fa-chevron-circle-right"></i>{{'translate.activityExcavator24'|trans}}</li>
+                        </ul>
+                    </div>
+                    <!--div class="col-md-6 ipsum_img"><img src="{{asset('bundles/test/images/construction-2.jpg')}}" alt=""></div-->
+                    <div class="col-md-12 p0">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-sm-4 constructing_right">
+                    <h2>{{'translate.activityQL'|trans}}</h2>
+                    <ul class="painting">
+                        <li><a href="{{ path('services') }}"><i class="fa fa-line-chart" aria-hidden="true"></i>{{'translate.ServicesLink11'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-home" aria-hidden="true"></i>{{'translate.ServicesLink21'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-connectdevelop" aria-hidden="true"></i>{{'translate.ServicesLink31'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-bar-chart" aria-hidden="true"></i>{{'translate.ServicesLink41'|trans}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Building Construction Area -->
+
+    <!-- Our Featured Works Area -->
+    <section class="featured_works row" data-stellar-background-ratio="0.3">
+        <div class="tittle wow fadeInUp">
+            <h2>{{'translate.activityFW1'|trans}}</h2>
+            <h4>{{'translate.activityFW2'|trans}}</h4>
+        </div>
+        <div class="featured_gallery">
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/audit.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink51'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/bunch.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink41'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/desgin.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink32'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/indoorSolution.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink21'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/performance.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink12'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 gallery_iner p0">
+                <img src="{{asset('bundles/test/images/strategie.jpg')}}" alt="">
+                <div class="gallery_hover">
+                    <h4>{{'translate.ServicesLink61'|trans}}</h4>
+                    <a href="{{path('services')}}" data-lightbox="image-1">{{'translate.activityVP'|trans}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Featured Works Area -->
+{% endblock %}

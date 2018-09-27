@@ -1,0 +1,50 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="titleTab">
+    <h1>Slider list</h1>
+    </div>
+    <section>
+  <!--for demo wrap-->
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Subtitle</th>
+            <th>Path</th>
+            <th> images </th>
+            <th> Actions </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+      {% for entity in entities %}
+        <tr>
+                <td><a href="{{ path('slider_show', { 'id': entity.id ,'name': name}) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.title }}</td>
+                <td>{{ entity.subtitle }}</td>
+                <td>{{ entity.path }}</td>
+                <td><img src="{{asset('bundles/test/uploads/sliders/'~entity.path)}}"/>
+                </td>
+                <td>
+                    <a href="{{ path('slider_show', { 'id': entity.id ,'name': name}) }}"> show </a><br>
+                    <a href="{{ path('slider_edit', { 'id': entity.id ,'name': name}) }}"> edit </a>
+                </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+        <a href="{{ path('addSlider',{'name': name }) }}">
+        <input type="submit" value=" New Slider " class="file-upload-btn">
+        </a>
+        <a href="{{ path('admin2',{'name': name }) }}">
+        <input type="submit" value=" Return to Administration page " class="file-upload-btn">
+        </a>
+    {% endblock %}

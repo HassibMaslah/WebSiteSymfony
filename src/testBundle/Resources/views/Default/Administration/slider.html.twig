@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+  
+   {% block body %}
+   
+
+{#{ form_start(form) }#}
+<form class="" method="POST" {{ form_enctype(form) }}>
+    <div class="file-upload">
+    <h1>ADD SLIDERS</h1>
+    <h5 class="message wow fadeInLeft animated" data-wow-delay="0.5s" >{{msg}}</h5>
+      <label>{{ form_label(form.title) }}:</label><br>
+      {{ form_widget(form.title) }}
+      {{ form_errors(form.title) }}<br>
+      <label>{{ form_label(form.subtitle) }}:</label><br>
+      {{ form_widget(form.subtitle) }}
+      {{ form_errors(form.title) }}<br>
+      <label>{{ form_label(form.file) }}:</label><br>
+      {{ form_widget(form.file) }}
+      {{ form_errors(form.file) }}<br>
+    
+    
+    {{ form_rest(form) }}
+    <input type="submit" value="ADD" class="file-upload-btn">
+    </div>
+</form> 
+ <a href="{{ path('slider',{'name': name }) }}">
+           <input type="submit" value=" Back to the list" class="file-upload-btn"> 
+        </a>
+    {#{ form_end(form) }#}
+    <!-- index JS (login)-->
+    <script src="{{asset('bundles/test/js/index.js')}}"></script>
+{% endblock %}

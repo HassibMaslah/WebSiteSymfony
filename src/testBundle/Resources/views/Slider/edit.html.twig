@@ -1,0 +1,28 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+<form class="" method="PUT" {{ form_enctype(edit_form) }}>
+    <div class="file-upload">
+    <h1>EDIT SLIDER {{entity.id}}</h1>
+      <label>{{ form_label(edit_form.title) }}:</label><br>
+      {{ form_widget(edit_form.title) }}
+      {{ form_errors(edit_form.title) }}<br>
+      <label>{{ form_label(edit_form.subtitle) }}:</label><br>
+      {{ form_widget(edit_form.subtitle) }}
+      {{ form_errors(edit_form.title) }}<br>
+      <label>{{ form_label(edit_form.file) }}:</label><br>
+      {{ form_widget(edit_form.file) }}
+      {{ form_errors(edit_form.file) }}<br>
+    
+    
+    {{ form_rest(edit_form) }}
+    <!--input type="submit" value="Update" class="file-upload-btn"-->
+    </div>
+</form> 
+
+
+ 
+<a href="{{ path('slider',{'name': name }) }}">
+    <input type="submit" value=" Back to the list" class="file-upload-btn">  
+    </a>
+{% endblock %}

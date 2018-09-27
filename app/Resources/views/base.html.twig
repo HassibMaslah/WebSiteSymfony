@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Telcotec</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{asset('bundles/test/images/faviconTelco.ico')}}" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="{{asset('bundles/test/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="{{asset('bundles/test/vendors/animate/animate.css')}}" rel="stylesheet">
+    <!-- Icon CSS-->
+	<link rel="stylesheet" href="{{asset('bundles/test/vendors/font-awesome/css/font-awesome.min.css')}}">
+    <!-- Camera Slider -->
+    <link rel="stylesheet" href="{{asset('bundles/test/vendors/camera-slider/camera.css')}}">
+    <!-- Owlcarousel CSS-->
+	<link rel="stylesheet" type="text/css" href="{{asset('bundles/test/vendors/owl_carousel/owl.carousel.css')}}" media="all">
+
+    <!--Theme Styles CSS-->
+	<link rel="stylesheet" type="text/css" href="{{asset('bundles/test/css/style.css')}}" media="all" />
+     <!-- styleadmin CSS -->
+    <link href="{{asset('bundles/test/css/styleadmin.css')}}" rel="stylesheet">
+    
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+    <body>
+<!-- Preloader >
+    <div class="preloader"></div-->
+ <!--  Login -->
+<section id="loginn" class="wow fadeInUp animated">
+
+<div class="containerr">
+
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+                    <span class="input-group-addon login_hide"><i class="fa fa-times"></i></span>
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form"  method="POST" action="{{path('admin')}}" role="form" style="display: block;">
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" required>
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember" value="remember-me">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<button type="submit"  name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" >Log In</button>
+											</div>
+										</div>
+									</div>
+									
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div class="lum">
+	<!-- Top Header_Area -->
+	<section class="top_header_area">
+	    <div class="container">
+            <ul class="nav navbar-nav top_nav">
+                <li><a ><i class="fa fa-phone"></i>(+216) 71 857 498</a></li>
+                <li><a href="mailto:contact@telcotec.tn"><i class="fa fa-envelope-o"></i>contact@telcotec.tn</a></li>
+                <li><a ><i class="fa fa-map-marker"></i>Telcotec Bloc I2 A14 Elgazala Technopark, Ariana  - Tunisie</a></li> 
+                {% if name is defined%}
+                <li><a href=""><i class="fa fa-user-secret"></i>{{name}}</a></li>
+                {%endif%}
+            </ul>
+            <ul class="nav navbar-nav navbar-right social_nav">
+                <li><a href="https://www.facebook.com/telcotec2015/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/114011996287304477560"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/company-beta/11186380/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                
+                {% if name is defined%}
+                <li><a  href="{{path('logout')}}" ><i class="fa fa-sign-out lg"></i></a></li>
+                 
+                {% else %}
+                <li><a href="#"><i class="fa fa-sign-in lg" aria-hidden="true"></i></a></li>
+                {%endif%}
+                
+            </ul>
+	    </div>
+	</section>
+	<!-- End Top Header_Area -->
+	<!-- End Login -->
+	<!-- Header_Area -->
+    <nav class="navbar navbar-default header_aera" id="main_navbar">
+        <div class="container">
+           
+            <div class="col-md-2 p0">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#min_navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('homepage') }}"><img src="{{asset('bundles/test/images/logo.png')}}" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="col-md-10 p0">
+                <div class="collapse navbar-collapse" id="min_navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown submenu">
+                        {% if name is defined%}
+                            <a href="{{ path('homepage') }}" >{{'translate.link1'|trans}}</a>
+                        {% else %}
+                        <a href="{{ path('homepage') }}" >{{'translate.link1'|trans}}</a>
+                        {%endif%}
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="{{ path('services') }}">{{'translate.link2'|trans}}</a>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">{{'translate.link3'|trans}}</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('activity1') }}">{{'translate.activity1'|trans}}</a></li>
+                                <li><a href="{{ path('activity2') }}">{{'translate.activity2'|trans}}</a></li>
+                                <li><a href="{{ path('activity3') }}">{{'translate.activity3'|trans}}</a></li>
+                                <li><a href="{{ path('activity4') }}">{{'translate.activity4'|trans}}</a></li>
+                                <li><a href="{{ path('activity5') }}">{{'translate.activity5'|trans}}</a></li>
+                                <li><a href="{{ path('activity6') }}">{{'translate.activity6'|trans}}</a></li>
+                                <li><a href="{{ path('activity7') }}">{{'translate.activity7'|trans}}</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="{{ path('references') }}" >{{'translate.link4'|trans}}</a>
+                        </li>
+                        <li class="dropdown submenu">
+                            <a href="{{ path('training') }}">{{'translate.link5'|trans}}</a>
+                        </li>
+                        <li><a href="{{ path('contact') }}">{{'translate.link6'|trans}}</a></li>
+                        <li class="dropdown submenu">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">{{'translate.link7'|trans}}</i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('languagesFR') }}">Fr</a></li>
+                                <li><a href="{{ path('languagesEN') }}">En</a></li>
+                            </ul>
+                        </li>
+                        <!--li><a href="#" class="nav_searchFrom"><i class="fa fa-search"></i></a></li-->
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container -->
+    </nav>
+	<!-- End Header_Area -->
+
+        {% block body %}{% endblock %}
+        
+    
+<!-- Footer Area -->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="footer_row row">
+                <div class="col-md-3 col-sm-6 footer_about">
+                    <h2>{{'translate.aboutComp'|trans}}</h2>
+                    <img src="{{asset('bundles/test/images/logo-footer.png')}}" alt="Telcotec" class="wow jackInTheBox animated">
+                    <p>{{'translate.aboutCompText'|trans}}</p>
+                    <ul class="socail_icon">
+                        <li><a href="https://www.facebook.com/telcotec2015/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://plus.google.com/114011996287304477560"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company-beta/11186380/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <br>
+                    <!--div id="google_translate_element"></div-->
+                </div>
+                <div class="col-md-3 col-sm-6 footer_about quick">
+                    <h2>{{'translate.Quick'|trans}}</h2>
+                    <ul class="quick_link">
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick1'|trans}} </a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick2'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick3'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick4'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick5'|trans}}</a></li>
+                        <li><a href="{{ path('services') }}"><i class="fa fa-chevron-right"></i>{{'translate.Quick6'|trans}}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer_about">
+                    <h2>{{'translate.twiter'|trans}}</h2>
+                    <a href="#" class="twitter">@colorlib: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
+                    <a href="#" class="twitter">@colorlib: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer_about">
+                    <h2>{{'translate.contactUs'|trans}}</h2>
+                    <address>
+                        <p>{{'translate.contactUsText'|trans}}:</p>
+                        <ul class="my_address">
+                            <li><a href="mailto:contact@telcotec.tn"><i class="fa fa-envelope" aria-hidden="true"></i>contact@telcotec.tn</a></li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>(+216) 71 857 498</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Telcotec Bloc I2 A14 Elgazala Technopark, Ariana  - Tunisie</span></a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <marquee behavior="scroll" direction="left"><h3 id="dateNow"><i class="fa fa-clock-o" aria-hidden="true"></i></h3></marquee>
+        <div class="copyright_area">
+            {{'translate.copyright'|trans}}
+        </div>
+    </footer>
+    </div>
+    {% block javascripts %}{% endblock %}
+        <!-- jQuery JS -->
+    <script src="{{asset('bundles/test/js/jquery-1.12.0.min.js')}}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{asset('bundles/test/js/bootstrap.min.js')}}"></script>
+    <!-- Animate JS -->
+    <script src="{{asset('bundles/test/vendors/animate/wow.min.js')}}"></script>
+    <!-- Camera Slider -->
+    <script src="{{asset('bundles/test/vendors/camera-slider/jquery.easing.1.3.js')}}"></script>
+    <script src="{{asset('bundles/test/vendors/camera-slider/camera.min.js')}}"></script>
+    <!-- Isotope JS -->
+    <script src="{{asset('bundles/test/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{asset('bundles/test/vendors/isotope/isotope.pkgd.min.js')}}"></script>
+    <!-- Progress JS -->
+    <script src="{{asset('bundles/test/vendors/Counter-Up/jquery.counterup.min.js')}}"></script>
+    <script src="{{asset('bundles/test/vendors/Counter-Up/waypoints.min.js')}}"></script>
+    <!-- Owlcarousel JS -->
+    <script src="{{asset('bundles/test/vendors/owl_carousel/owl.carousel.min.js')}}"></script>
+    <!-- Stellar JS -->
+    <script src="{{asset('bundles/test/vendors/stellar/jquery.stellar.js')}}"></script>
+    <!-- Theme JS -->
+    <script src="{{asset('bundles/test/js/theme.js')}}"></script>
+    <script src="{{asset('bundles/test/js/jqu.js')}}"></script>
+
+   <!--script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script-->
+</body> 
+</html>

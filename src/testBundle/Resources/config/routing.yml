@@ -1,0 +1,56 @@
+homepage:
+    path:     /{_locale}/home
+    defaults: { _controller: testBundle:Default:index }
+contact:
+    path:     /{_locale}/contact
+    defaults: { _controller: testBundle:Default:contact }
+services:
+    path:     /{_locale}/services
+    defaults: { _controller: testBundle:Default:services }
+training:
+    path:     /{_locale}/training
+    defaults: { _controller: testBundle:Default:training }
+references:
+    path:     /{_locale}/references
+    defaults: { _controller: testBundle:Default:references }
+admin:
+    path:     /{_locale}/administration
+    defaults: { _controller: testBundle:Admin:admin }
+admin2:
+    path:     /{_locale}/administration/{name}
+    defaults: { _controller: testBundle:Admin:admin2 }
+error:
+    path:     /{_locale}/error404
+    defaults: { _controller: testBundle:Default:error }
+logout:
+    path:     /{_locale}/home
+    defaults: { _controller: testBundle:Admin:logout }
+
+languagesFR:
+    path:     /fr/home
+    defaults: { _controller: testBundle:Default:index }
+languagesEN:
+    path:     /en/home
+    defaults: { _controller: testBundle:Default:index }
+
+eventt:
+    path:     /administration/evennement/{name}
+    defaults: { _controller: testBundle:Eventt:eventt }
+addSlider:
+    path:     /administration/addSlider/{name}
+    defaults: { _controller: testBundle:Sliders:slider }
+
+slider:
+    resource: "@testBundle/Resources/config/routing/slider.yml"
+    prefix:   /slider
+activity:
+    resource: "@testBundle/Resources/config/routing/activity.yml"
+    prefix:   /{_locale}/activity
+redirection:
+    path:     /redirection
+    defaults: { _controller: testBundle:Default:redirection }
+sendMail:
+    path:     /sendMail
+    defaults: { _controller: testBundle:Default:sendMail }
+
+

@@ -1,0 +1,43 @@
+{% extends '::base.html.twig' %}
+  
+   {% block body %}
+    <!-- styleadmin CSS -->
+    <link href="{{asset('bundles/test/css/styleadmin.css')}}" rel="stylesheet">
+
+
+    <form class="">
+    <div class="file-upload">
+    <h1>ADD EVENTS</h1>
+      <label>Event name:</label><br>
+      <input type="text" placeholder="name..."/><br>
+      <label>Event description:</label><br>
+      <input type="text" placeholder="description..."/><br>
+      <label>Event date:</label><br>
+      <input type="text" placeholder="y-m-d"/>
+     
+
+      
+      <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+          <h3>Drag and drop a file or select add Image</h3>
+        </div>
+      </div>
+      <div class="file-upload-content">
+        <img class="file-upload-image" src="#" alt="your image" />
+        <div class="image-title-wrap">
+          <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+        </div>
+      </div>
+      
+      <button class="file-upload-btn" onclick="Upload()">Create</button>
+      </div>
+    </form> 
+        <a href="{{ path('admin2',{'name': name }) }}">
+        <input type="submit" value=" Return to Administration page " class="file-upload-btn">
+        </a>
+    <!-- index JS (login)-->
+    <script src="{{asset('bundles/test/js/index.js')}}"></script>
+{% endblock %}

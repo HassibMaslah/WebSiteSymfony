@@ -1,0 +1,31 @@
+slider:
+    path:     /{name}
+    defaults: { _controller: "testBundle:Slider:index" }
+
+slider_show:
+    path:     /{id}/show/{name}
+    defaults: { _controller: "testBundle:Slider:show" }
+
+slider_new:
+    path:     /new/{name}
+    defaults: { _controller: "testBundle:Slider:new" }
+
+slider_create:
+    path:     /create/{name}
+    defaults: { _controller: "testBundle:Slider:create" }
+    methods:  POST
+
+slider_edit:
+    path:     /{id}/edit/{name}
+    defaults: { _controller: "testBundle:Slider:edit" }
+
+slider_update:
+    path:     /{id}/update
+    defaults: { _controller: "testBundle:Slider:update" }
+    methods:  [POST, PUT]
+
+slider_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "testBundle:Slider:delete" }
+    methods:  [POST, DELETE]
+

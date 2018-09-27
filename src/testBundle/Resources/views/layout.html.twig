@@ -1,0 +1,167 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+  
+
+    <!-- Slider area -->
+    <section class="slider_area row m0">
+        <div class="slider_inner">
+         {% for slide in Sliders %}
+            <div data-thumb="{{asset('bundles/test/uploads/sliders/' ~ slide.path)}}" data-src="{{asset('bundles/test/uploads/sliders/' ~ slide.path)}}">
+                <div class="camera_caption">
+                   <div class="container">
+                        <h5 class=" wow fadeInUp animated">{{ slide.title }}</h5>
+                        <h3 class=" wow fadeInUp animated" data-wow-delay="0.5s">{{ slide.subtitle }}</h3>
+                   </div>
+                </div>
+            </div>
+         {% endfor %}
+        </div>
+    </section>
+    <!-- End Slider area -->
+
+    <!-- About Us Area -->
+     <section class="about_us_area row">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>{{'translate.about'|trans}}</h2>
+                <h4></h4>
+            </div>
+            <div class="row about_row ">
+                <div class="col-md-5 col-sm-6 about_client wow fadeInLeft">
+                    <img src="{{asset('bundles/test/images/about/approach1.jpg')}}" alt="">
+                </div>
+                <div class="who_we_area col-md-7 col-sm-6 wow fadeInRight">
+                    <div class="subtittle">
+                        <h2>{{'translate.aboutApp'|trans}}</h2>
+                    </div>
+                    <p>{{'translate.aboutAppText'|trans}}</p>
+                </div>
+                
+            </div>
+            <div class="row about_row">
+                <div class="col-md-5 col-sm-6 about_client wow fadeInLeft">
+                    <img src="{{asset('bundles/test/images/about/goal1.jpg')}}" alt="">
+                </div>
+                <div class="who_we_area col-md-7 col-sm-6 wow fadeInRight">
+                    <div class="subtittle">
+                        <h2>{{'translate.aboutGoal'|trans}}</h2>
+                    </div>
+                    <p>{{'translate.aboutGoalText'|trans}}</p>
+                </div>
+                
+            </div>
+            
+            <div class="row about_row">
+                <div class="col-md-5 col-sm-6 about_client wow fadeInLeft">
+                    <img src="{{asset('bundles/test/images/about/mission1.jpg')}}" alt="">
+                </div>
+                <div class="who_we_area col-md-7 col-sm-6 wow fadeInRight">
+                    <div class="subtittle">
+                        <h2>{{'translate.aboutMis'|trans}}</h2>
+                    </div>
+                    <p>{{'translate.aboutMisText'|trans}}</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Us Area -->
+<section class="what_we_area ">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>{{'translate.aboutOffer'|trans}}</h2>
+                <h4>{{'translate.aboutOfferText'|trans}}</h4>
+            </div>
+            <div class="row construction_iner">
+                <div class="col-md-4 col-sm-6 construction wow fadeInLeft">
+                   <div class="cns-img">
+                        <img src="{{asset('bundles/test/images/performance.jpg')}}" alt="">
+                   </div>
+                   <div class="cns-content">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        <a href="{{ path('services') }}">{{'translate.aboutOfferPer'|trans}}</a>
+                        <p>{{'translate.aboutOfferPerText'|trans}}</p>
+                   </div>
+                </div>
+                <div class="col-md-4 col-sm-6 construction wow fadeInUp">
+                   <div class="cns-img">
+                        <img src="{{asset('bundles/test/images/indoorSolution.jpg')}}" alt="">
+                   </div>
+                   <div class="cns-content">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <a href="{{ path('services') }}">{{'translate.Quick2'|trans}}</a>
+                        <p>{{'translate.aboutOfferIndoorText'|trans}}</p>
+                   </div>
+                </div>
+                <div class="col-md-4 col-sm-6 construction wow fadeInRight">
+                   <div class="cns-img">
+                        <img src="{{asset('bundles/test/images/desgin.jpg')}}" alt="">
+                   </div>
+                   <div class="cns-content">
+                        <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                        <a href="{{ path('services') }}">{{'translate.aboutOfferDesign'|trans}}</a>
+                        <p>{{'translate.aboutOfferDesignText'|trans}}</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ path('services') }}">
+            <input type="submit" value="{{'translate.aboutSeeBtn'|trans}}" class="See_more"> 
+            </a>
+    </section>
+    <!-- Our Achievments Area -->
+    <section class="our_achievments_area" data-stellar-background-ratio="0.3">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>{{'translate.aboutAchiv'|trans}}</h2>
+                <h4>{{'translate.aboutAchivText'|trans}}</h4>
+            </div>
+            <div class="achievments_row row">
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-connectdevelop" aria-hidden="true"></i>
+                    <span class="counter">8</span>
+                    <h6>{{'translate.aboutAchivProj'|trans}}</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-euro" aria-hidden="true"></i>
+                    <span class="counter">500000</span>
+                    <h6>{{'translate.aboutAchivTurn'|trans}}</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-child" aria-hidden="true"></i>
+                    <span class="counter">25</span>
+                    <h6>{{'translate.aboutAchivEmpl'|trans}}</h6>
+                </div>
+                <div class="col-md-3 col-sm-6 p0 completed">
+                    <i class="fa fa-flag" aria-hidden="true"></i>
+                    <span class="counter">18</span>
+                    <h6>{{'translate.aboutAchivCountries'|trans}}</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Achievments Area -->
+    <!-- Our Partners Area -->
+    <section class="our_partners_area">
+        <div class="container">
+            <div class="tittle wow fadeInUp">
+                <h2>{{'translate.aboutPart'|trans}}</h2>
+                <h4></h4>
+            </div>
+            <div class="partners">
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-1.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-2.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-3.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-4.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-5.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-6.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-7.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-8.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-9.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-10.png')}}" alt=""></div>
+                <div class="item"><img src="{{asset('bundles/test/images/client_logo/client_logo-11.png')}}" alt=""></div>
+           
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

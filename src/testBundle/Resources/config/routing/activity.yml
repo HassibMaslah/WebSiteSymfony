@@ -1,0 +1,21 @@
+activity1:
+    path:     /activity1
+    defaults: { _controller: "testBundle:Activity:activity1" }
+activity2:
+    path:     /activity2
+    defaults: { _controller: "testBundle:Activity:activity2" }
+activity3:
+    path:     /activity3
+    defaults: { _controller: "testBundle:Activity:activity3" }
+activity4:
+    path:     /activity4
+    defaults: { _controller: "testBundle:Activity:activity4" }
+activity5:
+    path:     /activity5
+    defaults: { _controller: "testBundle:Activity:activity5" }
+activity6:
+    path:     /activity6
+    defaults: { _controller: "testBundle:Activity:activity6" }
+activity7:
+    path:     /activity7
+    defaults: { _controller: "testBundle:Activity:activity7" }

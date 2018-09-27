@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="titleTab">
+    <h1>Slider {{ entity.id }}</h1>
+    </div>
+
+    <table class="record_properties" border=1;>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ entity.title }}</td>
+            </tr>
+            <tr>
+                <th>Subtitle</th>
+                <td>{{ entity.subtitle }}</td>
+            </tr>
+            <tr>
+                <th>Path</th>
+                <td>{{ entity.path }}</td>
+            </tr>
+            <tr>
+                <th>image</th>
+                <td><img src="{{asset('bundles/test/uploads/sliders/' ~ entity.path)}}"/></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <li>{{ form(delete_form) }}</li>
+    <a href="{{ path('slider_edit', { 'id': entity.id,'name': name }) }}">
+    <Button>Edit</Button>
+    </a>
+    <a href="{{ path('slider',{'name': name }) }}">
+    <input type="submit" value=" Back to the list" class="file-upload-btn">  
+    </a>
+    
+{% endblock %}
